@@ -9,6 +9,7 @@
 
 <div class="hero">
 	<div class="hero-content">
+		<span class="kanji" aria-hidden="true">合</span>
 		<h1>Willkommen beim Aikido Dojo Boberg</h1>
 		<p class="subtitle">Traditionelle Kampfkunst in Hamburg</p>
 	</div>
@@ -63,22 +64,42 @@
 
 <style>
 	.hero {
-		background: linear-gradient(135deg, #212121 0%, #ab0b0b 100%);
-		color: white;
-		padding: 8rem 2rem 6rem;
+		background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
+		color: #212121;
+		padding: 4rem 2rem 3rem;
 		text-align: center;
 		margin-bottom: 4rem;
+		position: relative;
+		overflow: hidden;
+	}
+
+	.kanji {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		font-size: 20rem;
+		color: rgba(171, 11, 11, 0.08);
+		font-weight: bold;
+		line-height: 1;
+		pointer-events: none;
+		z-index: 0;
+	}
+
+	.hero-content {
+		position: relative;
+		z-index: 1;
 	}
 
 	.hero-content h1 {
-		font-size: 3rem;
+		font-size: 2.5rem;
 		margin-bottom: 1rem;
-		color: white;
+		color: #212121;
 	}
 
 	.subtitle {
-		font-size: 1.5rem;
-		opacity: 0.9;
+		font-size: 1.3rem;
+		color: #212121;
 	}
 
 	.about {
@@ -179,12 +200,20 @@
 	}
 
 	@media (max-width: 768px) {
+		.hero {
+			padding: 3rem 2rem 2rem;
+		}
+
+		.kanji {
+			font-size: 12rem;
+		}
+
 		.hero-content h1 {
-			font-size: 2rem;
+			font-size: 1.75rem;
 		}
 
 		.subtitle {
-			font-size: 1.2rem;
+			font-size: 1.1rem;
 		}
 
 		.about-content {
