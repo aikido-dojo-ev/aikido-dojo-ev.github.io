@@ -17,19 +17,26 @@
 <div class="container">
 	<section class="about">
 		<h2>Über uns</h2>
-		<p>
-			Aikido ist eine japanische Kampfkunst, die Körper und Geist in Einklang bringt. 
-			In unserem Dojo in Hamburg-Boberg trainieren wir traditionelles Aikido mit Fokus 
-			auf Technik, Respekt und persönlicher Entwicklung.
-		</p>
-		<p>
-			Unser Training ist für alle Altersgruppen und Fitnesslevel geeignet. 
-			Ob Anfänger oder Fortgeschrittener - bei uns findet jeder seinen Platz.
-		</p>
-		<p>
-			Wir legen großen Wert auf eine freundliche und respektvolle Atmosphäre, 
-			in der sich jeder wohlfühlen kann. Komm vorbei und erlebe Aikido selbst!
-		</p>
+		<div class="about-content">
+			<div class="about-text">
+				<p>
+					Aikido ist eine japanische Kampfkunst, die Körper und Geist in Einklang bringt. 
+					In unserem Dojo in Hamburg-Boberg trainieren wir traditionelles Aikido mit Fokus 
+					auf Technik, Respekt und persönlicher Entwicklung.
+				</p>
+				<p>
+					Unser Training ist für alle Altersgruppen und Fitnesslevel geeignet. 
+					Ob Anfänger oder Fortgeschrittener - bei uns findet jeder seinen Platz.
+				</p>
+				<p>
+					Wir legen großen Wert auf eine freundliche und respektvolle Atmosphäre, 
+					in der sich jeder wohlfühlen kann. Komm vorbei und erlebe Aikido selbst!
+				</p>
+			</div>
+			<div class="about-image">
+				<img src="/images/aikido-training.jpg" alt="Aikido Training mit Bokken" />
+			</div>
+		</div>
 	</section>
 
 	<section class="news">
@@ -84,10 +91,31 @@
 		color: #212121;
 	}
 
-	.about p {
+	.about-content {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 3rem;
+		align-items: center;
+	}
+
+	.about-text p {
 		font-size: 1.1rem;
 		line-height: 1.8;
 		margin-bottom: 1.5rem;
+	}
+
+	.about-image {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.about-image img {
+		width: 100%;
+		max-width: 500px;
+		height: auto;
+		border-radius: 8px;
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 	}
 
 	.news {
@@ -157,6 +185,11 @@
 
 		.subtitle {
 			font-size: 1.2rem;
+		}
+
+		.about-content {
+			grid-template-columns: 1fr;
+			gap: 2rem;
 		}
 
 		.news-grid {
