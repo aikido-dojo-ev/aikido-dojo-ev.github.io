@@ -9,7 +9,7 @@
 
 <div class="hero">
 	<div class="hero-content">
-		<span class="kanji" aria-hidden="true">合</span>
+		<span class="kanji" aria-hidden="true">気</span>
 		<h1>Willkommen beim Aikido Dojo Boberg</h1>
 		<p class="subtitle">Traditionelle Kampfkunst in Hamburg</p>
 	</div>
