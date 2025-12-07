@@ -9,7 +9,9 @@
     "preview": "vite preview"
   },
   "type": "module",
-  "keywords": [],
+  "keywords": [
+    
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
@@ -18,6 +20,10 @@
     "@sveltejs/vite-plugin-svelte": "^6.2.1",
     "mdsvex": "^0.12.6",
     "svelte": "^5.45.6",
-    "vite": "^7.2.6"
+    "vite": "^7.2.6",
+    "vite-plugin-devtools-json": "^1.0.0"
+  },
+  "dependencies": {
+    "mdsvex-relative-images": "^2.0.0"
   }
 }

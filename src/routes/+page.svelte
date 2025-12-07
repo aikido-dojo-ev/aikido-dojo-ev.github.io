@@ -133,7 +133,7 @@
 
 	.about-image img {
 		width: 100%;
-		max-width: 500px;
+		max-width: 300px;
 		height: auto;
 		border-radius: 8px;
 		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
