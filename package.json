@@ -1,0 +1,22 @@
+{
+  "name": "aikido-dojo-boberg-website",
+  "version": "1.0.0",
+  "description": "Web Präsenz für aikido-dojo-ev.de Aikido Verein",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@sveltejs/adapter-static": "^3.0.10",
+    "@sveltejs/kit": "^2.49.1",
+    "mdsvex": "^0.12.6",
+    "svelte": "^5.45.6",
+    "vite": "^7.2.6"
+  }
+}
