@@ -11,7 +11,11 @@
 <nav>
   <div class="nav-container">
     <a href="/" class="logo">
-      <img src="/images/logo_main.svg" alt="Aikido Dojo Boberg" class="logo-image" />
+      <img
+        src="/images/logo_nav.svg"
+        alt="Aikido Dojo Boberg"
+        class="logo-image"
+      />
     </a>
 
     <button class="menu-toggle" on:click={toggleMenu} aria-label="Toggle menu">
