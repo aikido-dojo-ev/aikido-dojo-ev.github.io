@@ -1,11 +1,24 @@
 <script>
   import { page } from "$app/stores";
+  import { onMount } from "svelte";
+  import { on } from "svelte/events";
 
   let mobileMenuOpen = false;
 
   function toggleMenu() {
     mobileMenuOpen = !mobileMenuOpen;
   }
+
+  onMount(() => {
+    return on(document, "click", (ev) => {
+      const navLinks = ev.target.closest(".nav-links");
+      const toggle = ev.target.closest(".menu-toggle");
+
+      // Only close menu if click is outside of nav links and toggle button
+      if (toggle || (navLinks && ev.target === navLinks)) return;
+      mobileMenuOpen = false;
+    });
+  });
 </script>
 
 <nav>
@@ -30,7 +43,9 @@
       <a href="/blog" class:active={$page.url.pathname.startsWith("/blog")}
         >Blog</a
       >
-      <a href="/mitglied-werden" class:active={$page.url.pathname === "/mitglied-werden"}
+      <a
+        href="/mitglied-werden"
+        class:active={$page.url.pathname === "/mitglied-werden"}
         >Mitglied werden</a
       >
       <a
@@ -103,6 +118,7 @@
     height: 3px;
     margin: 3px 0;
     transition: 0.3s;
+    background-color: #212121;
   }
 
   .nav-links {
@@ -136,16 +152,12 @@
       display: flex;
     }
 
-    .logo-text {
-      display: none;
-    }
-
     .nav-links {
       position: absolute;
       top: 100%;
       left: 0;
       right: 0;
-      background-color: #212121;
+      background-color: #fcfcfc;
       flex-direction: column;
       padding: 1rem;
       gap: 1rem;

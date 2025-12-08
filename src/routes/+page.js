@@ -5,7 +5,7 @@ export async function load() {
 	for (const path in postFiles) {
 		const post = await postFiles[path]();
 		const slug = path.split('/').pop().replace('.md', '');
-		
+
 		posts.push({
 			slug,
 			title: post.metadata.title || 'Untitled',
@@ -17,7 +17,5 @@ export async function load() {
 	// Sort by date, newest first
 	posts.sort((a, b) => new Date(b.date) - new Date(a.date));
 
-	return {
-		posts
-	};
+	return { posts: posts.slice(0, 3) };
 }
