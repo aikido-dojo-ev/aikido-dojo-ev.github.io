@@ -12,6 +12,11 @@
 
   <footer>
     <div class="footer-content">
+      <div class="association-info">
+        <p class="association-text">
+          Mitglied im Ki No Kenkyukai Association Internationale
+        </p>
+      </div>
       <p>
         &copy; {new Date().getFullYear()} Aikido Dojo e.V. im ASV Bergedorf
         <span class="separator">|</span> Alle Rechte vorbehalten.
@@ -58,6 +63,20 @@
     align-items: center;
   }
 
+  .association-info {
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  .association-text {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 500;
+    opacity: 0.95;
+  }
+
   footer p {
     margin: 0;
     font-size: 0.9rem;
@@ -77,12 +96,18 @@
   }
 
   .footer-links a:hover {
-    color: #ab0b0b;
+    color: #212121;
     opacity: 1;
   }
 
   .separator {
     color: white;
     opacity: 0.5;
+  }
+
+  @media (max-width: 768px) {
+    .association-text {
+      font-size: 0.9rem;
+    }
   }
 </style>
