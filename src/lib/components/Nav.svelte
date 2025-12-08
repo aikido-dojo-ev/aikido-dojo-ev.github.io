@@ -11,7 +11,7 @@
 <nav>
   <div class="nav-container">
     <a href="/" class="logo">
-      <h1>Aikido Dojo e.V.</h1>
+      <img src="/images/logo_main.svg" alt="Aikido Dojo Boberg" class="logo-image" />
     </a>
 
     <button class="menu-toggle" on:click={toggleMenu} aria-label="Toggle menu">
@@ -62,13 +62,15 @@
     align-items: center;
   }
 
-  .logo h1 {
-    margin: 0;
-    font-size: 1.5rem;
-  }
-
   .logo {
     text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+
+  .logo-image {
+    height: 40px;
+    width: auto;
   }
 
   .menu-toggle {
