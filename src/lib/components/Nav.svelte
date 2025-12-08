@@ -16,6 +16,7 @@
         alt="Aikido Dojo Boberg"
         class="logo-image"
       />
+      <span class="logo-text">Aikido Dojo e.V.</span>
     </a>
 
     <button class="menu-toggle" on:click={toggleMenu} aria-label="Toggle menu">
@@ -70,11 +71,19 @@
     text-decoration: none;
     display: flex;
     align-items: center;
+    gap: 1rem;
   }
 
   .logo-image {
     height: 40px;
     width: auto;
+  }
+
+  .logo-text {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #212121;
+    white-space: nowrap;
   }
 
   .menu-toggle {
@@ -122,6 +131,10 @@
   @media (max-width: 768px) {
     .menu-toggle {
       display: flex;
+    }
+
+    .logo-text {
+      display: none;
     }
 
     .nav-links {
