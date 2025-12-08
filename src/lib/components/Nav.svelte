@@ -30,6 +30,9 @@
       <a href="/blog" class:active={$page.url.pathname.startsWith("/blog")}
         >Blog</a
       >
+      <a href="/mitglied-werden" class:active={$page.url.pathname === "/mitglied-werden"}
+        >Mitglied werden</a
+      >
       <a
         href="https://www.instagram.com/aikido_dojo_boberg/"
         target="_blank"
