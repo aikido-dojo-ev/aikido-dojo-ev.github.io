@@ -91,15 +91,37 @@ The main colors are defined in `src/lib/styles/global.css`:
 
 ## 📦 Deployment
 
-The site is built as a static site and can be deployed to any static hosting service:
+### Automatic Deployment to GitHub Pages
 
-- GitHub Pages
+This repository includes a GitHub Actions workflow that automatically deploys the site to GitHub Pages whenever changes are pushed to the `main` branch.
+
+**How it works:**
+1. On every push to `main`, the workflow triggers automatically
+2. Dependencies are installed using `npm ci`
+3. The site is built using `npm run build`
+4. The contents of the `build/` directory are deployed to GitHub Pages
+5. The site becomes available at the configured GitHub Pages URL
+
+**Viewing Deployment Status:**
+- Visit the **Actions** tab in the GitHub repository to see deployment progress
+- Each deployment creates a new workflow run showing build and deploy steps
+- The live site URL is displayed in the deployment environment after successful deployment
+
+**Manual Deployment:**
+The workflow runs automatically, but you can also:
+- Manually trigger a deployment from the Actions tab
+- View deployment history and logs for troubleshooting
+
+### Alternative Deployment Options
+
+The site is built as a static site and can also be deployed to other hosting services:
+
 - Netlify
 - Vercel
 - AWS S3 + CloudFront
 - Any web server
 
-Simply upload the contents of the `build` directory.
+Simply upload the contents of the `build` directory after running `npm run build`.
 
 ## 📄 License
 
