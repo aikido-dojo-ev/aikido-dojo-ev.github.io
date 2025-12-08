@@ -8,6 +8,9 @@
 </svelte:head>
 
 <div class="hero">
+  <div class="hero-background">
+    <img src="/images/logo_main.svg" alt="" class="hero-watermark" aria-hidden="true" />
+  </div>
   <div class="hero-content">
     <h1>Willkommen beim Aikido Dojo Boberg</h1>
     <p class="subtitle">Traditionelle Kampfkunst in Hamburg</p>
@@ -82,6 +85,28 @@
     margin-bottom: 4rem;
     position: relative;
     overflow: hidden;
+  }
+
+  .hero-background {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  .hero-watermark {
+    width: 60%;
+    max-width: 800px;
+    height: auto;
+    opacity: 0.08;
+    filter: grayscale(100%);
   }
 
   .hero-content {
@@ -201,8 +226,9 @@
       padding: 3rem 2rem 2rem;
     }
 
-    .hero-logo {
-      max-width: 150px;
+    .hero-watermark {
+      width: 80%;
+      max-width: 400px;
     }
 
     .hero-content h1 {
