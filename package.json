@@ -19,7 +19,7 @@
     "@sveltejs/kit": "^2.49.1",
     "@sveltejs/vite-plugin-svelte": "^6.2.1",
     "mdsvex": "^0.12.6",
-    "svelte": "^5.45.6",
+    "svelte": "^5.53.6",
     "vite": "^7.2.6",
     "vite-plugin-devtools-json": "^1.0.0"
   },
