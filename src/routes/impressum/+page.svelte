@@ -8,8 +8,8 @@
 	<section>
 		<h2>Angaben gemäß § 5 TMG</h2>
 		<p>
-			Aikido Dojo Boberg e.V.<br>
-			Musterstraße 123<br>
+			Aikido Dojo e.V.<br>
+			Weidemoor 3<br>
 			21033 Hamburg
 		</p>
 	</section>
@@ -17,16 +17,16 @@
 	<section>
 		<h2>Vertreten durch</h2>
 		<p>
-			1. Vorsitzende/r: [Name]<br>
-			2. Vorsitzende/r: [Name]
+			1. Vorsitzende/r: J. Möller<br>
+			2. Vorsitzende/r: E. Luitle
 		</p>
 	</section>
 
 	<section>
 		<h2>Kontakt</h2>
 		<p>
-			E-Mail: info@aikido-dojo-boberg.de<br>
-			Telefon: [Telefonnummer]
+			E-Mail: aikido@aikido-dojo-ev.de<br>
+			Telefon: 040/ 67108097
 		</p>
 	</section>
 
