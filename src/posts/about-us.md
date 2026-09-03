@@ -1,10 +1,10 @@
 ---
-title: "Über uns"
+title: "Wer wir sind"
 date: "2026-09-02"
 excerpt: "Unser Verein besteht seit 1994 und wir praktizieren und unterrichten den Stil des Shin-Shin-Toitsu-Aikido"
 ---
 
-# Über uns
+# Wer wir sind
 
 Unser Verein besteht seit 1994 und wir praktizieren und unterrichten den Stil des Shin-Shin-Toitsu-Aikido - „Aikido in
 Einheit von Körper und Geist" oder
