@@ -18,7 +18,7 @@ Im Jahre 2002 gründete Kenjiro Yoshigasaki (1951-2021), Schüler von Koichi Toh
 -->
 
 <figure style="margin-inline-start: 0px;">
-  <img style="margin:0;" src="./images/walter_beppe.jpg" alt="Zwei Aikido-Praktizierende in weißen Anzügen und schwarzen Hakama stehen sich auf einer hellen Trainingsfläche gegenüber und kreuzen ihre Bokken. Im Hintergrund sind ein Vorhang und eine Bühne oder Trainingshalle zu sehen; die Szene wirkt konzentriert und ruhig." />
-  <figcaption style="top:2px; font-size:0.9em;">Beppe Sensei und Dojoleiter Walter Dervaritsch, 6. Dan</figcaption>
+  <img style="margin:0;" src="./images/doshu_2015.jpg" alt="Yoshigasaki Sensei 2025 mit Schüler" />
+  <figcaption style="top:2px; font-size:0.9em;">Yoshigasaki Sensei mit Schüler, 2015</figcaption>
 </figure>
 
